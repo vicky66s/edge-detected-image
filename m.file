@@ -1,0 +1,20 @@
+% Read the image
+image = imread('your_image.jpg');
+
+% Convert the image to grayscale
+gray_image = rgb2gray(image);
+
+% Detect edges using the Canny edge detector
+edges = edge(gray_image, 'canny');
+
+% Find contours in the edge-detected image
+contours = bwboundaries(edges);
+
+% Draw red squares around the detected contours
+imshow(image);
+hold on;
+for k = 1:length(contours)
+    boundary = contours{k};
+    plot(boundary(:,2), boundary(:,1), 'r', 'LineWidth', 2);
+end
+hold off;
