@@ -4,7 +4,7 @@ image = imread('your_image.jpg');
 % Convert the image to grayscale.
 gray_image = rgb2gray(image);
 
-% Detect edges using the Canny edge detector
+% Detect edges using the Canny edge detector.
 edges = edge(gray_image, 'canny');
 
 % Find contours in the edge-detected image
