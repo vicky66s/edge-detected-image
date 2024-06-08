@@ -1,7 +1,7 @@
-% Read the image
+% Read the image.
 image = imread('your_image.jpg');
 
-% Convert the image to grayscale
+% Convert the image to grayscale.
 gray_image = rgb2gray(image);
 
 % Detect edges using the Canny edge detector
