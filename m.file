@@ -1,4 +1,5 @@
-% Read the image.950000000000
+% 950000000000
+% Read the image.
 image = imread('your_image.jpg');
 
 % Convert the image to grayscale.
